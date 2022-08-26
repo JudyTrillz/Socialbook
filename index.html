@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Social Book</title>
+</head>
+<body>
+    
+    <nav>
+        <div class="nav-left">
+            <img src="images/logo.png" alt="logo" class="logo">
+            <ul>
+                <li><img src="images/notification.png" alt=""></li>
+                <li><img src="images/inbox.png" alt=""></li>
+                <li><img src="images/video.png" alt=""></li>
+            </ul>
+        </div>
+        <div class="nav-right">
+
+            <div class="search-box">
+                <img src="images/search.png" alt="">
+                <input type="text" placeholder="Search">
+            </div>
+
+            <div class="nav-user-icon online" onclick="settingsMenuToggle()">
+                <img src="images/profile-pic.png" alt="">
+            </div>
+        </div>
+
+
+        <!------------ Settings  ---------->
+        <div class="settings">
+
+            <div id="dark-btn">
+                <span></span>
+            </div>
+
+            <div class="settings-menu">
+                <div class="user-profile">
+                    <img src="images/profile-pic.png">
+                    <div>
+                        <p>JudyTrillz</p>
+                        <a href="#">Your Profile</a>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="user-profile">
+                    <img src="images/feedback.png">
+                    <div>
+                        <p>Give Feedback</p>
+                        <a href="#">Help us to improve the new design</a>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="settings-links">
+                    <img src="images/setting.png" class="settings-icon">
+                    <a href="#">Settings & Privacy <img src="images/arrow.png" width="10px"></a>
+                </div>
+
+                <div class="settings-links">
+                    <img src="images/help.png" class="settings-icon">
+                    <a href="#">Help & Support <img src="images/arrow.png" width="10px"></a>
+                </div>
+
+                <div class="settings-links">
+                    <img src="images/display.png" class="settings-icon">
+                    <a href="#">Display & Accessibility <img src="images/arrow.png" width="10px"></a>
+                </div>
+
+                <div class="settings-links">
+                    <img src="images/logout.png" class="settings-icon">
+                    <a href="#">Logout <img src="images/arrow.png" width="10px"></a>
+                </div>
+
+
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <!--------------- Left sidebar --------------->
+        <div class="left-sidebar">
+            <div class="imp-links">
+                <a href="#"><img src="images/news.png" alt="news"> Latest News</a>
+                <a href="#"><img src="images/friends.png" alt="friends"> Friends</a>
+                <a href="#"><img src="images/group.png" alt="group">Group</a>
+                <a href="#"><img src="images/marketplace.png" alt="marketplace"> Marketplace</a>
+                <a href="#"><img src="images/watch.png" alt="watch"> Watch</a>
+                <a href="#">See More</a>
+            </div>
+
+            <div class="shortcut-links">
+                <p>Your Shortcut</p>
+                <a href="#"><img src="images/shortcut-1.png" alt="">Web Developers</a>
+                <a href="#"><img src="images/shortcut-2.png" alt="">Web Design course</a>
+                <a href="#"><img src="images/shortcut-3.png" alt="">Full Stack Development</a>
+                <a href="#"><img src="images/shortcut-4.png" alt="">Website Experts</a>
+            </div>
+        </div>
+
+        <!--------------- Main Content --------------->
+        <div class="main-content">
+
+            <div class="story-gallery">
+                <div class="story story1">
+                    <img src="images/upload.png" alt=""> 
+                    <p>Post Story</p>
+                </div>
+                <div class="story story2">
+                    <img src="images/member-1.png" alt=""> 
+                    <p>Tracy</p>
+                </div>
+                <div class="story story3">
+                    <img src="images/member-2.png" alt=""> 
+                    <p>Wick</p>
+                </div>
+                <div class="story story4">
+                    <img src="images/member-3.png" alt=""> 
+                    <p>Gareth</p>
+                </div>
+                <div class="story story5">
+                    <img src="images/member-4.png" alt=""> 
+                    <p>Patricia</p>
+                </div>
+            </div>
+
+            
+
+            <div class="write-post-container">
+                <div class="user-profile">
+                    <img src="images/profile-pic.png">
+                    <div>
+                        <p>JudyTrillz</p>
+                        <small>Public <i class="fa-solid fa-caret-down"></i></small>
+                    </div>
+                </div>
+
+                <div class="post-input-container">
+                    <textarea placeholder="What's on your mind John" rows="3"></textarea>
+
+                    <div class="add-post-links">
+                        <a href="#"><img src="images/live-video.png">Live Video</a>
+                        <a href="#"><img src="images/photo.png">Photo/Video</a>
+                        <a href="#"><img src="images/feeling.png">Feeling/Avtivity</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="images/profile-pic.png">
+                        <div>
+                            <p>JudyTrillz</p>
+                            <span>August 26 2022, 01:00 pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fa-solid fa-ellipsis-v"></i></a>
+                </div>
+                <p class="post-txt">
+                    I am Actually learning to be a <span>Software Developer</span>. You Can join me on my journey and become a software developer like me. <a href="#">#softwaredeveloper #frontend #socialbook</a>
+                </p>
+                <img src="images/feed-image-1.png" class="post-img">
+                
+                <div class="post-row">
+                    <div class="activity">
+                        <div><img src="images/like-blue.png">120</div>
+                        <div><img src="images/comments.png">100</div>
+                        <div><img src="images/share.png">20</div>
+                    </div>
+
+                    <div class="post-profile-icon">
+                        <img src="images/profile-pic.png"><i class="fa-solid fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="images/profile-pic.png">
+                        <div>
+                            <p>JudyTrillz</p>
+                            <span>March 10 2022, 02:00 pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fa-solid fa-ellipsis-v"></i></a>
+                </div>
+                <p class="post-txt">
+                    Nothing like having friend on the beach round <span>a fire</span>. Just talk and have fun, listen to good music and relax. <a href="#">#friendship #love</a>
+                </p>
+                <img src="images/feed-image-2.png" class="post-img">
+                
+                <div class="post-row">
+                    <div class="activity">
+                        <div><img src="images/like-blue.png">20k</div>
+                        <div><img src="images/comments.png">10k</div>
+                        <div><img src="images/share.png">5k</div>
+                    </div>
+
+                    <div class="post-profile-icon">
+                        <img src="images/profile-pic.png"><i class="fa-solid fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="images/profile-pic.png">
+                        <div>
+                            <p>JudyTrillz</p>
+                            <span>August 26 2022, 01:00 pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fa-solid fa-ellipsis-v"></i></a>
+                </div>
+                <p class="post-txt">
+                    Heading out with @Richmond @Bobby @Tessy @Jessica <span>For Lunch</span>. <a href="#">#Food #friends #lunch</a>
+                </p>
+                <img src="images/feed-image-3.png" class="post-img">
+                
+                <div class="post-row">
+                    <div class="activity">
+                        <div><img src="images/like-blue.png">120k</div>
+                        <div><img src="images/comments.png">100k</div>
+                        <div><img src="images/share.png">2k</div>
+                    </div>
+
+                    <div class="post-profile-icon">
+                        <img src="images/profile-pic.png"><i class="fa-solid fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="images/profile-pic.png">
+                        <div>
+                            <p>JudyTrillz</p>
+                            <span>September 1 2022, 10:00 am</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fa-solid fa-ellipsis-v"></i></a>
+                </div>
+                <p class="post-txt">
+                    Another project successfully completed. Even my boss couldn't help but smile for a job well done.  <a href="#">#project #work #accomplished</a>
+                </p>
+                <img src="images/feed-image-4.png" class="post-img">
+                
+                <div class="post-row">
+                    <div class="activity">
+                        <div><img src="images/like-blue.png">3k</div>
+                        <div><img src="images/comments.png">1k</div>
+                        <div><img src="images/share.png">10</div>
+                    </div>
+
+                    <div class="post-profile-icon">
+                        <img src="images/profile-pic.png"><i class="fa-solid fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="images/profile-pic.png">
+                        <div>
+                            <p>JudyTrillz</p>
+                            <span>September 10 2022, 07:15 am</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fa-solid fa-ellipsis-v"></i></a>
+                </div>
+                <p class="post-txt">
+                    Another project just landed and we are getting ready to kill it. <span>Spot my leader in the white suit.</span> <a href="#">#Team #work #Teamwork</a>
+                </p>
+                <img src="images/feed-image-5.png" class="post-img">
+                
+                <div class="post-row">
+                    <div class="activity">
+                        <div><img src="images/like-blue.png">20k</div>
+                        <div><img src="images/comments.png">10k</div>
+                        <div><img src="images/share.png">10</div>
+                    </div>
+
+                    <div class="post-profile-icon">
+                        <img src="images/profile-pic.png"><i class="fa-solid fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+
+            <button type="button" class="load-more-button">Load More</button>
+
+        </div>
+
+        <!--------------- Right sidebar --------------->
+        <div class="right-sidebar">
+            <div class="sidebar-title">
+                <h4>Events</h4>
+                <a href="#">See All</a>
+            </div>
+
+            <div class="event">
+                <div class="left-event">
+                    <h3>25</h3>
+                    <span>August</span>
+                </div>
+                <div class="right-event">
+                    <h4>Social Party</h4>
+                    <p><i class="fa-solid fa-location-dot"></i> Abeokuta, Nigeria.</p>
+                    <a href="#">More Info</a>
+                </div>
+            </div>
+
+            <div class="event">
+                <div class="left-event">
+                    <h3>10</h3>
+                    <span>September</span>
+                </div>
+                <div class="right-event">
+                    <h4>Stage Drama</h4>
+                    <p><i class="fa-solid fa-location-dot"></i> Cultural Center Abeokuta, Nigeria.</p>
+                    <a href="#">More Info</a>
+                </div>
+            </div>
+
+            <div class="sidebar-title">
+                <h4>Advertisement</h4>
+                <a href="#">Close</a>
+            </div>
+
+            <img src="images/advertisement.png" alt="advert" class="sidebar-ads">
+
+            <div class="sidebar-title">
+                <h4>Conversations</h4>
+                <a href="#">Hide Chat</a>
+            </div>
+
+            <div class="online-list">
+                <div class="online">
+                    <img src="images/member-1.png" alt="member-1">
+                </div>
+                <p>Sarah Doe</p>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="images/member-2.png" alt="member-1">
+                </div>
+                <p>Judy Trillz</p>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="images/member-3.png" alt="member-1">
+                </div>
+                <p>Patricia Nkem</p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>copyright 2022 - Socialbook.</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
