@@ -16,6 +16,7 @@
     --body-color: #0a0a0a;
     --nav-color: #000;
     --bg-color: #000;
+    --font-color: #fff;
 }
 
 body{
@@ -441,6 +442,7 @@ nav{
     border-bottom: 0.065rem solid #ccc;
     background: transparent;
     resize: none;
+    color: var(--font-color);
 }
 
 .add-post-links{
